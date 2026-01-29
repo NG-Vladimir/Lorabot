@@ -8,7 +8,7 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Обработчик команды /start — отвечает приветствием."""
-    await update.message.reply_text("Привет!")
+    await update.message.reply_text("Привет! Господин Владимир! ")
 
 
 def main() -> None:
