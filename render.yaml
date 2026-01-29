@@ -1,0 +1,11 @@
+# Render.com — деплой бота 24/7 как Background Worker
+# https://render.com
+services:
+  - type: worker
+    name: telegram-hello-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false  # задаётся вручную в панели Render
